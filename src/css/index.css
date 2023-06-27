@@ -1,0 +1,27 @@
+body section {
+  flex-direction: column;
+  gap: 5rem;
+  width: 80%;
+  margin: auto;
+}
+
+body section img {
+  border-radius: 2rem;
+}
+
+body section p.paragraph {
+  animation: fadeIn 2s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    width: 2rem;
+    opacity: 0;
+  }
+
+  100% {
+    color: white;
+    width: 50%;
+    opacity: 1;
+  }
+}
