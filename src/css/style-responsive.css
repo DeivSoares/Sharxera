@@ -1,0 +1,77 @@
+@media (min-width: 320px) and (max-width: 500px) {
+  body {
+    background-position: top right;
+  }
+  body nav {
+    display: none;
+  }
+
+  body nav.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body nav.mobile button {
+    border: 1px solid #cd00c6;
+    background-color: #cd00c662;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  body nav.mobile button svg {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  body div.flexlist-menu {
+    display: none;
+  }
+
+  body div.opened {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../images/FB_IMG_1676320700663.jpg) top center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    animation: slideUp 1s ease-in forwards;
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      top: 500px;
+    }
+
+    100% {
+      opacity: 1;
+      top: 0px;
+    }
+  }
+
+  body div.flexlist-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+  }
+
+  body div {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+@media(min-width: 501px)and (max-width: 1024px){
+    body{
+        background-position: center right;
+    }
+}

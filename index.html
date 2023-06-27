@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style-responsive.css">
+    <title>Live do Sharxera</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="">Cronograma</a></li>
+            <li><a href="">Últimos vídeos</a></li>
+            <li><a href="">Assistir ao vivo</a></li>
+            <li><a href="">Discord</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile">
+        <button class="btn-mobile">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+    </nav>
+    <section>
+        <div id="twitch-embed"></div>
+    </section>
+
+    <div class="flexlist-menu">
+        <h1>MENU</h1>
+        <ul id="list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cronograma</a></li>
+            <li><a href="#">Últimos vídeos</a></li>
+            <li><a href="#">Assistir ao vivo</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+    </div>
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script src="src/js/index.js"></script>
+    <script src="src/js/twitch.js"></script>
+</body>
+
+</html>

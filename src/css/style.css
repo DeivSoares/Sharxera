@@ -1,0 +1,84 @@
+:root {
+    --font-color: #cd00c6;
+    --bg-color: #cd00c62d;
+    --color-hover: #ff00b7;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: url(../images/bg-profile-default.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body nav {
+  height: 4rem;
+}
+
+body nav.mobile {
+  display: none;
+}
+
+body nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  height: 100%;
+  background-color: var(--bg-color);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+body nav ul li a:hover {
+  color: var(--color-hover);
+  transition: 1s;
+  font-size: 1.9rem;
+}
+
+body section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+}
+
+body div {
+  width: 60%;
+  height: 70%;
+}
+
+body div iframe {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--bg-color);
+  border-radius: 2rem;
+}
+
+
+
+
+
+/* MENU MOBILE */
+div.flexlist-menu{
+display: none;
+}
